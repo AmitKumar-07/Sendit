@@ -3,12 +3,18 @@ const express = require('express');
 const app = express();
 const PORT = process.env.PORT || 3000;
 const path = require('path');
-
+const cors =require('cors');
 // app.use(cors(corsOptions))
 app.use(express.static('public'));
 
 const connectDB = require('./config/db');
 connectDB();
+
+//cors
+const corsOption = {
+    origin :process.env.ALLOWED_CLIENTS.split(',')
+}
+app.use( cors (corsOption) );
 
 app.use(express.json());
 //template engine
