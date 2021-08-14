@@ -8,7 +8,7 @@ const progressPercent = document.querySelector("#progressPercent");
 const progressContainer = document.querySelector(".progress-container");
 const progressBar = document.querySelector(".progress-bar");
 const status = document.querySelector(".status");
-require('dotenv').config();
+// require('dotenv').config();
 const sharingContainer = document.querySelector(".sharing-container");
 const copyURLBtn = document.querySelector("#copyURLBtn");
 const fileURL = document.querySelector("#fileURL");
@@ -16,8 +16,8 @@ const emailForm = document.querySelector("#emailForm");
 
 const toast = document.querySelector(".toast");
 
-const baseURL = "https://send-anything.herokuapp.com/";
-// const baseURL = process.env.APP_BASE_URL;
+// const baseURL = "https://send-anything.herokuapp.com/";
+const baseURL = "http://localhost:3000";
 // const uploadURL = `process.env.APP_BASE_URL/api/files`;
 // const emailURL = `process.env.APP_BASE_URL/api/files/send`;
 const uploadURL = `${baseURL}/api/files`;
