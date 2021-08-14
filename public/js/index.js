@@ -18,8 +18,6 @@ const toast = document.querySelector(".toast");
 
 const baseURL = "https://send-anything.herokuapp.com/";
 // const baseURL = "http://localhost:3000";
-// const uploadURL = `process.env.APP_BASE_URL/api/files`;
-// const emailURL = `process.env.APP_BASE_URL/api/files/send`;
 const uploadURL = `${baseURL}/api/files`;
 const emailURL = `${baseURL}/api/files/send`;
 
