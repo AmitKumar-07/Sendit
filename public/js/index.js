@@ -31,7 +31,7 @@ browseBtn.addEventListener("click", () => {
 dropZone.addEventListener("drop", (e) => {
   e.preventDefault();
   //   console.log("dropped", e.dataTransfer.files[0].name);
-  const files = e.dataTransfer.files;
+  const files = e.dataTransfer.files; //dataTransfer event ka object hota h usme dropped file hoti h
   if (files.length === 1) {
     if (files[0].size < maxAllowedSize) {
       fileInput.files = files;
@@ -46,7 +46,7 @@ dropZone.addEventListener("drop", (e) => {
 });
 
 dropZone.addEventListener("dragover", (e) => {
-  e.preventDefault();
+  e.preventDefault();//apne se download nhi hoga file upload karne pe
   dropZone.classList.add("dragged");
 
   // console.log("dropping file");
