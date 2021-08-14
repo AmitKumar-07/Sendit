@@ -11,10 +11,10 @@ const connectDB = require('./config/db');
 connectDB();
 
 //cors
-const corsOption = {
-    origin :process.env.ALLOWED_CLIENTS.split(',')
-}
-app.use( cors (corsOption) );
+// const corsOption = {
+//     origin :process.env.ALLOWED_CLIENTS.split(',')
+// }
+// app.use( cors (corsOption) );
 
 app.use(express.json());
 //template engine
